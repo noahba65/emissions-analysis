@@ -2,6 +2,12 @@
 library(tidyverse)
 library(readxl)
 
+
+# data code book https://github.com/owid/co2-data/blob/master/owid-co2-codebook.csv for owid-co2-data.csv
+# need to rework code to use this data set instead. 
+# Data is downloaded here https://github.com/owid/co2-data?tab=readme-ov-file
+
+
 carbon_ffi_df <- read_csv("~/Documents/GitHub/emissions-analysis/Data/annual-co2-emissions-per-country.csv") %>%
   rename(annual_co2 = `Annual CO₂ emissions`)
 carbon_luc_df <- read_csv("~/Documents/GitHub/emissions-analysis/Data/co2-land-use.csv") %>%
